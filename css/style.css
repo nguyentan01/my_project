@@ -1,0 +1,149 @@
+header{
+    /* background: #c0392b; */
+    color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+header #logo_header{
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    /* background: #333; */
+    position: absolute;
+    right: 20px ;
+  }
+  
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 15px;
+}
+
+.navbar a:hover{
+  background: #3d1144;
+  transition: 1.5s;
+}
+
+body{
+    background: #ce125c;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.content{
+  width: 50%;
+  color: #fff;
+  padding: 0 20px;
+  align-items: center;
+  /* background: #000; */
+  position: absolute;
+  margin-top: 120px;
+  font-size: 1em;
+  line-height: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+.banner{
+  float: right;
+  /* background: yellow; */
+  position: relative;
+  width: 50%;
+  text-align: center;
+ 
+}
+.banner img{
+  width: 600px;
+  height: 400px;
+  animation: bannershow 4s infinite;
+  transition: 3s;
+  /* background: green;*/
+} 
+@keyframes bannershow{
+  50%{
+    transform: translateY(5%);
+  }
+ 
+  100%{
+    transform: translateY(0);
+  }
+}
+.banner::before{
+  content: '';
+  width: 400px;
+  height: 400px;
+  background: #000;
+  position: absolute;
+  left: 30%;
+  transform: translateY(-10%);
+  border-radius: 50%;
+  /* transform: translateX(40%); */
+  opacity: .3;
+  margin-top: 100px;
+  box-shadow:20px 20px 50px 15px #fff;  
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #1d1f1f;
+  color: white;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+}
+footer .contact_info{
+  display: flex;
+  /* background: green; */
+  width: 50%;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+footer .contact_info a{
+  display: block;
+  color: #fff;
+  margin-left: 5px;
+  text-decoration: none;
+}
+footer .icon{
+width: 50%;
+height: 100%;
+/* background: brown; */
+/* display: flex; */
+}
+footer .icon ul{
+  display: flex;
+  list-style: none;
+  /* background: #4834d4; */
+  justify-content: space-around;
+  width: 300px;
+  float: right;
+  margin-top: 30px;
+}
+footer i{
+  width: 50px;
+  height: 50px;
+  display: block;
+  color: #fff;
+
+}
+@media(max-width: 420px)
+{
+  /* .banner img{
+    width: 100px;
+    height: 100px;
+    margin-left: 500px;
+  } */
+}
